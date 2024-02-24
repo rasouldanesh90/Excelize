@@ -1,0 +1,41 @@
+{
+    "name": "rasouldanesh90/excelize",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@email.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/rasouldanesh90/excelize",
+    "keywords": ["Laravel", "Excelize"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rasouldanesh90\\Excelize\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rasouldanesh90\\Excelize\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rasouldanesh90\\Excelize\\ExcelizeServiceProvider"
+            ],
+            "aliases": {
+                "Excelize": "Rasouldanesh90\\Excelize\\Facades\\Excelize"
+            }
+        }
+    }
+}
